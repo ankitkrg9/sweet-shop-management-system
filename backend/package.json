@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev src/app.ts"
+    "build": "tsc",
+  "start": "node dist/app.js",
+  "dev": "ts-node-dev src/app.ts"
   },
+
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
     "@types/cors": "^2.8.19",
