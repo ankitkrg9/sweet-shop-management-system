@@ -16,8 +16,11 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://sweet-shop-management-system-git-main-ankitkrg9s-projects.vercel.app"
+      "https://sweet-shop-management-system-sooty-one.vercel.app",
+      "https://sweet-shop-management-system-git-main-ankitkrg9s-projects.vercel.app",
+      "https://sweet-shop-management-system-1fe18joid-ankitkrg9s-projects.vercel.app",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
