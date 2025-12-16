@@ -14,8 +14,11 @@ const app = express();
 // ✅ CORS FIX (THIS IS THE KEY)
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    credentials: true
+    origin: [
+      "http://localhost:5173",
+      "https://sweet-shop-management-system-git-main-ankitkrg9s-projects.vercel.app"
+    ],
+    credentials: true,
   })
 );
 
